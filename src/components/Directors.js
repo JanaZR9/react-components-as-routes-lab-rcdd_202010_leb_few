@@ -7,16 +7,14 @@ const Directors = () => {
       {/*{code here}*/}
       <h1>Directors Page</h1>
        <div>
-         {directors.map((director, i) => (
-          <div key={i}>
+         {directors.map(director => (
               <h3>Name: {director.title}</h3>
               <p> Movies:</p>
               <ul>
-                  {director.movies.map((movie, j) => (
-                      <li key={j}>{movie}</li>
+                  {director.movies.map(movie=> (
+                      <li>{movie}</li>
                   ))}
               </ul>
-          </div>
       ))}
         </div>
     </div>
